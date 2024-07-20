@@ -6,10 +6,9 @@ body {
 
 #home {
   background-color:  #088395;
-  padding-bottom: 1cm;
   margin-left:-1cm;
   margin-right:-1cm;
-  margin-top:-1cm;
+  margin-top:-1.25cm;
   padding-top: 2cm;
   padding-bottom: 2cm;
   height: 5mm;
@@ -33,6 +32,7 @@ body {
 .topdiv {
   float: right;
   padding-right: 1cm;
+  margin-top: .5cm;
 }
 
 .profile_name {
@@ -110,6 +110,7 @@ h2 {
   height: fit-content;
   vertical-align: middle;
   margin: 5px;
+  margin-top: 1cm;
   padding-right: 1cm;
   padding-top: .6cm;
   
