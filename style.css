@@ -1,244 +1,240 @@
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
 }
 
 /* Navigation Bar */
 
 #home {
-  background-color:  #088395;
-  margin-left:-1cm;
-  margin-right:-1cm;
-  margin-top:-1.25cm;
-  padding-top: 2cm;
-  padding-bottom: 2cm;
-  height: 5mm;
- }
+	background-color: #088395;
+	margin-left: -1cm;
+	margin-right: -1cm;
+	margin-top: -1.25cm;
+	padding-top: 2cm;
+	padding-bottom: 2cm;
+	height: 5mm;
+}
 
 .topmenu {
-  color: lightgray;
-  margin: 10px;
-  padding: 20px;
-  font-size: 20px;
-  text-decoration:none;
-  font-weight: bolder;
-  text-decoration: underline;
+	color: lightgray;
+	margin: 10px;
+	padding: 20px;
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: bolder;
+	text-decoration: underline;
 }
 
 .topmenu:hover {
-  color: white;
-  /* Add the styles here */
+	color: white;
+	/* Add the styles here */
 }
 
 .topdiv {
-  float: right;
-  padding-right: 1cm;
-  margin-top: .5cm;
+	float: right;
+	padding-right: 1cm;
+	margin-top: 0.5cm;
 }
 
 .profile_name {
-  float: left;
-  padding-left: 2cm;
-  /* Add the styles here */
+	float: left;
+	padding-left: 2cm;
+	/* Add the styles here */
 }
 
 .profile_name .contact_info {
-  font-size: 15px;
-  font-style: italic;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
+	font-size: 15px;
+	font-style: italic;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
 }
 
 .contact_info img {
-  width:25px;
-  margin-right: 10px;
-  float:left;
+	width: 25px;
+	margin-right: 10px;
+	float: left;
 }
 
 /* Titles */
 
 h2 {
-  text-align: justify;
-  font-size: 50px;
-  text-align: center;
-  float: left;
-  color: #37B7C3;
-  margin: 30px;
-  margin-left: 60px;
-  margin-top: 40px;
-  margin-bottom: 0px;
+	text-align: justify;
+	font-size: 50px;
+	text-align: center;
+	float: left;
+	color: #37b7c3;
+	margin: 30px;
+	margin-left: 60px;
+	margin-top: 40px;
+	margin-bottom: 0px;
 }
 
 .introduction {
-  text-align: justify;
-  font-size: 30px;
-  text-align: center;
-  float: left;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  animation-duration: 5s;
-  position: relative;
+	text-align: justify;
+	font-size: 30px;
+	text-align: center;
+	float: left;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	animation-duration: 5s;
+	position: relative;
 }
 
-/* Used in the About Me sections */
-
 /* About Me Section Styles */
-
-/* About Me Section Styles */
-
 .about-me {
-  display: flex;
-  flex-direction: row; /* Explicitly set row direction */
-  align-items: flex-start; /* Align items to the top */
-  padding: 60px;
-  background-color: #f9f9f9;
-  margin-top: 30px;
+	display: flex;
+	align-items: flex-start;
+	padding: 60px;
+	background-color: #f9f9f9;
+	margin-top: 30px;
 }
 
 .profile_image {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  margin-right: 60px;
-  flex-shrink: 0; /* Prevent the image from shrinking */
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 50%;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+	margin-right: 60px;
+	flex-shrink: 0;
 }
 
 .profile_image:hover {
-  transform: scale(1.05);
+	transform: scale(1.05);
 }
 
 .about-me-content {
-  flex: 1;
+	flex: 1;
 }
 
-#about-me h1 {
-  font-size: 48px;
-  color: #071952;
-  margin-bottom: 20px;
-  position: relative;
+.about-me h1 {
+	font-size: 48px;
+	color: #071952;
+	margin-bottom: 20px;
+	position: relative;
 }
 
-#about-me h1::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 4px;
-  background-color: #37B7C3;
-  margin-top: 10px;
+.about-me h1::after {
+	content: '';
+	display: block;
+	width: 60px;
+	height: 4px;
+	background-color: #37b7c3;
+	margin-top: 10px;
 }
 
-#about-me p {
-  font-size: 18px;
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 20px;
+.about-me p {
+	font-size: 18px;
+	color: #555;
+	line-height: 1.6;
+	margin-bottom: 20px;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .about-me {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 40px 20px;
-  }
+	.about-me {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 40px 20px;
+	}
 
-  .profile_image {
-    margin-right: 0;
-    margin-bottom: 30px;
-  }
+	.profile_image {
+		margin-top: 70px;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
 
-  #about-me h1 {
-    font-size: 36px;
-  }
+	.about-me h1 {
+		font-size: 36px;
+	}
 
-  #about-me h1::after {
-    margin: 10px auto 0;
-  }
+	.about-me h1::after {
+		margin: 10px auto 0;
+	}
 
-  #about-me p {
-    font-size: 16px;
-  }
+	.about-me p {
+		font-size: 16px;
+	}
 }
 
 /* Skills */
 /* Skills Section Styles */
 
 .skills {
-  margin-top: 30px;
-  margin-left: 60px;
-  margin-right: 60px;
+	margin-top: 30px;
+	margin-left: 60px;
+	margin-right: 60px;
 }
 
 .skills h2 {
-  font-size: 50px;
-  text-align: center;
-  color: #37B7C3;
-  margin: 30px 0;
+	font-size: 50px;
+	text-align: center;
+	color: #37b7c3;
+	margin: 30px 0;
 }
 
 .all_skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
 }
 
 .skill {
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  text-align: center;
-  padding: 20px;
-  width: 150px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	text-align: center;
+	padding: 20px;
+	width: 150px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .skill:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	transform: translateY(-5px);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .skill img {
-  height: 60px;
-  width: 60px;
-  object-fit: contain;
-  margin-bottom: 10px;
+	height: 60px;
+	width: 60px;
+	object-fit: contain;
+	margin-bottom: 10px;
 }
 
 .skill h6 {
-  font-size: 18px;
-  color: #071952;
-  margin: 10px 0 5px;
-  font-weight: bold;
+	font-size: 18px;
+	color: #071952;
+	margin: 10px 0 5px;
+	font-weight: bold;
 }
 
 .skill p {
-  font-size: 14px;
-  color: #888;
-  margin: 5px 0;
+	font-size: 14px;
+	color: #888;
+	margin: 5px 0;
 }
 
 .flex_center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .all_skills {
-    justify-content: space-around;
-  }
-  
-  .skill {
-    width: calc(50% - 20px);
-    margin: 10px 0;
-  }
+	.all_skills {
+		justify-content: space-around;
+	}
+
+	.skill {
+		width: calc(50% - 20px);
+		margin: 10px 0;
+	}
 }
 
 /* Projects */
@@ -246,56 +242,56 @@ h2 {
 /* Projects Section Styles */
 
 .projects {
-  margin-top: 30px;
-  margin-left: 60px;
-  margin-right: 60px;
+	margin-top: 30px;
+	margin-left: 60px;
+	margin-right: 60px;
 }
 
 .projects h2 {
-  font-size: 50px;
-  text-align: center;
-  color: #37B7C3;
-  margin: 30px 0;
+	font-size: 50px;
+	text-align: center;
+	color: #37b7c3;
+	margin: 30px 0;
 }
 
 .projects-container {
-  margin-top: 30px;
-  padding-left: 20px; /* Added padding to create space on the left */
+	margin-top: 30px;
+	padding-left: 20px; /* Added padding to create space on the left */
 }
 
 .project-card {
-  background-color: #f9f9f9;
-  border-left: 5px solid #37B7C3;
-  margin-bottom: 30px;
-  padding: 20px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+	background-color: #f9f9f9;
+	border-left: 5px solid #37b7c3;
+	margin-bottom: 30px;
+	padding: 20px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+	transform: translateY(-5px);
 }
 
 .project-card h3 {
-  font-size: 28px;
-  color: #071952;
-  margin-bottom: 15px;
+	font-size: 28px;
+	color: #071952;
+	margin-bottom: 15px;
 }
 
 .project-card ul {
-  padding-left: 20px;
+	padding-left: 20px;
 }
 
 .project-card li {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 10px;
-  line-height: 1.5;
+	font-size: 18px;
+	color: #333;
+	margin-bottom: 10px;
+	line-height: 1.5;
 }
 
 /* Remove the hr styles if you don't want to use horizontal lines between projects */
 .projects-container hr {
-  display: none;
+	display: none;
 }
 
 /* If you want to keep the hr, you can style it like this:
@@ -305,201 +301,149 @@ h2 {
   margin: 20px 0;
 }
 */
-
 /* Recommendations */
+#recommendations {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+#recommendations h2 {
+  text-align: center;
+  color: #37B7C3;
+  margin-bottom: 40px;
+}
 
 .all_recommendations {
   display: flex;
-  align-items: center;
-  margin-left: 1in;
-  flex-direction: row;
-  flex-flow: wrap;
-  padding: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0 20px;
 }
 
 .recommendation {
   font-style: italic;
-  text-align: left;
-  width: 21.875rem;
-  padding: 1rem;
+  text-align: center;
+  width: 300px;
+  padding: 30px;
   background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px var(--primary-shadow);
-  padding: 20px;
-  margin: 10px;
-  border:1px solid gray;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
   font-size: 18px;
-  height:150px
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.recommendation span {
+.recommendation:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.recommendation .quote {
   color: #37B7C3;
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-size: 48px;
+  font-family: Georgia, serif;
+  line-height: 0;
+  vertical-align: -0.4em;
 }
 
-/* Scroll to Top Button */
-
-.iconbutton{
-  width: 48px;
-  height: 48px;
-  border-radius: 100%;
-  background-color: #37B7C3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  right: 3%;
-  bottom: 3%;
-  cursor: pointer;
+.recommendation .quote:first-child {
+  margin-right: 5px;
 }
 
-/* Form Pop-up */
-
-.popup {
-  width:400px;
-  background-color: #e8bcf0;
-  border-radius: 3mm;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-  position: fixed;
-  /* padding: 30px; */
-  visibility: hidden;
+.recommendation .quote:last-child {
+  margin-left: 5px;
 }
 
-.popup img {
-  padding-top: 20px;
+@media (max-width: 768px) {
+  .recommendation {
+    width: 100%;
+    max-width: 300px;
+  }
 }
-
-.popup button {
-  background-color: #fff;
-  border: 1px solid #37B7C3;
-  color: #37B7C3;
-  display: block;
-  border-radius: 6px;
-  text-align: center;
-  margin: 50px;
-  padding: 10px;
-  width: 2in;
-  font-size: 20px;
-  margin-left: 25%;
-}
-
-.popup button:hover {
-  background-color: #fff;
-  border: 2px solid #37B7C3;
-  color: #37B7C3;
-  display: block;
-  font-weight: bolder;
-  text-align: center;
-  cursor: pointer;
-  margin-left: 25%;
-}
-
-/* Recommendation Form */
-
-input, textarea {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-  margin: 10px;  
-  width:100%;
-}
-
-fieldset {
-  display: flexbox;
-  align-content: center;
-  justify-content: center;  
-  padding: 25px; 
-  margin-left: 50px; 
-  margin-right: 50px;   
-  border: thin solid white;
-  width: 50%;
-}
-
 /* Buttons */
 
 button {
-  background-color: #fff;
-  border: 1px solid #37B7C3;
-  color: #37B7C3;
-  display: block;
-  border-radius: 6px;
-  text-align: center;
-  margin: 50px;
-  padding: 10px;
-  width: 2in;
-  font-size: 20px;
+	background-color: #fff;
+	border: 1px solid #37b7c3;
+	color: #37b7c3;
+	display: block;
+	border-radius: 6px;
+	text-align: center;
+	margin: 50px;
+	padding: 10px;
+	width: 2in;
+	font-size: 20px;
 }
 
 button:hover {
-  background-color: #37B7C3;
-  border: 1px solid #37B7C3;
-  color: #fff;
-  display: block;
-  border-radius: 6px;
-  text-align: center;
-  cursor: pointer;
+	background-color: #37b7c3;
+	border: 1px solid #37b7c3;
+	color: #fff;
+	display: block;
+	border-radius: 6px;
+	text-align: center;
+	cursor: pointer;
 }
 
 /* Experience Section Styles */
 
 .experience {
-  margin-top: 30px;
-  margin-left: 60px;
-  margin-right: 60px;
+	margin-top: 30px;
+	margin-left: 60px;
+	margin-right: 60px;
 }
 
 .experience h2 {
-  font-size: 50px;
-  text-align: center;
-  color: #37B7C3;
-  margin: 30px 0;
+	font-size: 50px;
+	text-align: center;
+	color: #37b7c3;
+	margin: 30px 0;
 }
 
 .experience-container {
-  margin-top: 30px;
-  padding-left: 20px; /* Added padding to create space on the left */
+	margin-top: 30px;
+	padding-left: 20px; /* Added padding to create space on the left */
 }
 
 .experience-card {
-  background-color: #f9f9f9;
-  border-left: 5px solid #37B7C3;
-  margin-bottom: 30px;
-  padding: 20px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+	background-color: #f9f9f9;
+	border-left: 5px solid #37b7c3;
+	margin-bottom: 30px;
+	padding: 20px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
 }
 
 .experience-card:hover {
-  transform: translateY(-5px);
+	transform: translateY(-5px);
 }
 
 .experience-card h3 {
-  font-size: 28px;
-  color: #071952;
-  margin-bottom: 10px;
+	font-size: 28px;
+	color: #071952;
+	margin-bottom: 10px;
 }
 
 .experience-card h4 {
-  font-size: 22px;
-  color: #37B7C3;
-  margin-bottom: 5px;
+	font-size: 22px;
+	color: #37b7c3;
+	margin-bottom: 5px;
 }
 
 .experience-card h5 {
-  font-size: 18px;
-  color: #888;
-  margin-bottom: 15px;
+	font-size: 18px;
+	color: #888;
+	margin-bottom: 15px;
 }
 
 .experience-card ul {
-  padding-left: 20px;
+	padding-left: 20px;
 }
 
 .experience-card li {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 10px;
-  line-height: 1.5;
+	font-size: 18px;
+	color: #333;
+	margin-bottom: 10px;
+	line-height: 1.5;
 }
