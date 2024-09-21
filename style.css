@@ -82,38 +82,86 @@ h2 {
 
 /* Used in the About Me sections */
 
-.container {
-  display: flex;
-}
+/* About Me Section Styles */
 
-/* About Me */
+/* About Me Section Styles */
 
 .about-me {
   display: flex;
-  align-items: center;
-}
-
-#about-me h1 {
-  font-size: 65px;
-  margin-top: 90px;
-  color: #071952;
-}
-
-#about-me p {
-  font-size: 25px;
-  color: rgb(128, 128, 128);
-  margin-top: -1cm;
+  flex-direction: row; /* Explicitly set row direction */
+  align-items: flex-start; /* Align items to the top */
+  padding: 60px;
+  background-color: #f9f9f9;
+  margin-top: 30px;
 }
 
 .profile_image {
-  width: 550px;
-  height: fit-content;
-  vertical-align: middle;
-  margin: 5px;
-  margin-top: 1cm;
-  padding-right: 1cm;
-  padding-top: .6cm;
-  
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-right: 60px;
+  flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.profile_image:hover {
+  transform: scale(1.05);
+}
+
+.about-me-content {
+  flex: 1;
+}
+
+#about-me h1 {
+  font-size: 48px;
+  color: #071952;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#about-me h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #37B7C3;
+  margin-top: 10px;
+}
+
+#about-me p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .profile_image {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  #about-me h1 {
+    font-size: 36px;
+  }
+
+  #about-me h1::after {
+    margin: 10px auto 0;
+  }
+
+  #about-me p {
+    font-size: 16px;
+  }
 }
 
 /* Skills */
